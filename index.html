@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 	<head>
@@ -23,10 +24,10 @@
 
 	</head>
 
-	<body class="home-template">
-
     <!-- loader -->
   <div class="loader"><div class="cube-loader"></div></div>
+
+	<body class="home-template">
 
 		<!-- main content -->
 	<main class="content" id="home">
@@ -37,8 +38,8 @@
 		
 			<div class="me-info">
 
-				<div class="title">mio mio</div>
-				<div class="about-me">product designer based in Oslo</div>
+				<div class="title">mio riola</div>
+				<div class="about-me">product designer</div>
 
 				<div class="social">
 
@@ -56,7 +57,7 @@
 
 				</div>
 
-		<div class="copyright">copyright © <a href="https://twitter.com/" target="_blank">Lego</a> 2020</div>
+		<div class="copyright">copyright © <a href="https://twitter.com/" target="_blank">lego</a></div>
 
 			</div>
 		</div>
@@ -67,20 +68,15 @@
 
 			<div class="txt-card">
 
-				<div>
+        <span>I'm a Design Lover & Front End Developer.</span>
 
-					<p>I'm a Design Lover & Front End Developer.</p></br>
+        <span>Amet nostrud officia labore ex sed officia aliqua do pariatur qui dolore qui iconsequat commodo sint officia reprehenderit reprehenderit voluptate adipisicing amet in.</span>
 
-          <p>Amet nostrud officia labore ex sed officia aliqua do pariatur qui dolore qui iconsequat commodo sint officia reprehenderit reprehenderit voluptate adipisicing amet in.</p></br>  
+        <span>Find me on<a href="https://behance.net/" target="_blank"> Behance</a> /
+						<a href="https://twitter.com/" target="_blank"> Twitter</a></span>
 
-					<p>Find me on<a href="https://behance.net/" target="_blank"> Behance</a> /
-						<a href="https://twitter.com/" target="_blank"> Twitter</a></p></br>
-
-
-					<p>Touch by <a onClick="javascript:window.open('mailto:your-email@gmail.com', 'Mail'); event.preventDefault()" href="mailto:your-email@gmail.com?Subject=Hi%20John Doe"> E-mail </a> / view <a href="http://maps.apple.com/maps?q=48.135758,11.571973" target="_blank"> Map </a> / in <a href="https://web.whatsapp.com" target="_blank"> Whatsapp </a>
-					</p>
-
-				</div>
+        <span>Touch by <a onClick="javascript:window.open('mailto:your-email@gmail.com', 'Mail'); event.preventDefault()" href="mailto:your-email@gmail.com?Subject=Hi%20John Doe"> E-mail </a> / view <a href="http://maps.apple.com/maps?q=48.135758,11.571973" target="_blank"> Map </a> / in <a href="https://web.whatsapp.com" target="_blank"> Whatsapp </a>
+				</span>			
 
 			</div>
 
@@ -105,8 +101,8 @@
         </div>
 
 				<div class="audio-info">
-					<p class="track">antenne bayern</p>
-					<p class="track-data">chillout radio</p>
+					<span class="track">antenne bayern</span>
+					<span class="track-data">chillout radio</span>
 				</div>
 
 			</div>
@@ -126,9 +122,11 @@
     var sound=new Howl({src:["http://mp3channels.webradio.antenne.de:80/chillout"],html5:!0,onplay:function(){audioPlayed=!0;$(".play").hide();$(".stop").show()},onpause:function(){$(".play").show();$(".stop").hide()}});$(".audio-icon").click(function(){$(this).toggleClass("playing");$(this).hasClass("playing")?sound.play():sound.pause()});
     </script>   
 
-         <!-- SVG icons -->
-    <script src="js/svg4everybody.min.js" onload="svg4everybody({})" async=""></script>
+       <!-- SVG icons -->
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
 
+    <!-- svg icons -->   
   <svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">            
 
   <symbol id="twitter" viewBox="0 0 20 20">
