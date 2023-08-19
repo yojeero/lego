@@ -1,6 +1,6 @@
 <img src="preview/pic.jpg">
 
-### [Lego](https://legoo.vercel.app/) is a landing HTML template for personal. ###
+### [Lego](https://legoo.vercel.app/) is a landing HTML template. ###
 
 ```
 Features
