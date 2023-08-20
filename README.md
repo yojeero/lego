@@ -1,4 +1,4 @@
-<img src="preview/pic.jpg">
+<img src="preview/pic.webp">
 
 ### [Lego](https://legoo.vercel.app/) is a landing HTML template. ###
 
@@ -13,3 +13,4 @@ Features
 - Flexbox
 - Slider, jQuery
 - Radio player via Howler.JS
+- Included 404.html page for site maintenance
