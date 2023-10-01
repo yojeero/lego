@@ -1,4 +1,4 @@
-<img src="preview/pic.webp">
+<img src="preview/creative.jpg">
 
 ### [Lego](https://legoo.vercel.app/) is a landing HTML template. ###
 
