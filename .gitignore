@@ -1,5 +1,5 @@
 # Игнорировать файл preview
-/preview/pic.webp
+/preview/creative.jpg
 
 #Исключим сам файл .gitignore:
 .gitignore
