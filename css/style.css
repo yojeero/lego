@@ -1,24 +1,54 @@
-/*   reset.css  */
-html { font-family : system-ui,-apple-system,Segoe UI,Roboto,Noto Sans,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; box-sizing : border-box; -webkit-text-size-adjust : 100%; }* , ::after , ::before { box-sizing : inherit }blockquote , body , dd , dl , dt , fieldset , figure , h1 , h2 , h3 , h4 , h5 , h6 , hr , html , iframe , legend , li , ol , p , pre , textarea , ul { font-size : 100%; font-weight : 400; margin : 0; padding : 0; vertical-align : baseline; border : 0; outline : 0 }ul { list-style : none }button , input , select , textarea { margin : 0 }audio , embed , iframe , img , object , video { max-width : 100%; height : auto; vertical-align : middle; border : 0; }table { border-spacing : 0; border-collapse : collapse; }td , th { padding : 0; text-align : left }a { cursor : pointer; text-decoration : none; color : #1e87f0; border : none; background : transparent }a:active , a:focus , a:hover { color : #000; color : #0f6ecd; outline-width : 0; }
+/* css reset | @yojeero | https://github.com/yojeero */
+
+**, *::before, *::after {box-sizing: border-box} * {margin: 0} 
+html, body{font-size: 62.5%; height: 100%}
+
+img, picture, video, canvas {display: block; max-width: 100%}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word}
+input, button, textarea, select {font: inherit}
+ul[role='list'], ol[role='list'] {list-style: none}
+a {cursor: pointer; text-decoration: none; border: 0; background: transparent}
+a:active, a:focus, a:hover {outline-width: 0}  
+
+/* style  */
+
+:root {
+  --color-bg: #f5f5f2; 
+
+  --color-bg-wild : #dbeef2 ;
+
+  --color-text: #3f4144; 
+
+  --color-white: #fff;
+
+  --color-link: #3887a9;
+  --color-hover: #02c6ba;
+
+  --color-label: #bfc0bf;
+
+  --color-player-bg: #b9bea5;
+  --color-player: #e2e4da;  
+
+  --color-shadow: rgba(0, 0, 0, .2);
+
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
 
 /* 	main  */
 
-body , html
-{
-	height : 100%
-}   
-
 body
 {
-
-	font-family : Nunito, sans-serif;
-
-	font-size : 1rem;
+	font-family : Nunito, var(--font-family);
+	font-size : 1.6rem;
 	font-weight : 300;
-	line-height : 2rem;
+	line-height : 1.6;
 
-	color : #434343;
-	background : #f8f8f8
+	width : 100%;
+
+	margin : 0;
+	padding : 0;
+
+	color : var(--color-text)
 }
 
 .page
@@ -34,7 +64,7 @@ body
 	height : 100%;
 	min-height : 100vh;	
 	max-width : 1920px;
-	max-height : 1080px;	
+	max-height : 1080px
 }
 
 .content
@@ -43,13 +73,12 @@ body
 	flex-wrap : nowrap;	
 
 	width : 66%;
-	height : 100%;
+	height : 100vh;
 	max-height : 1080px;
 
-	border-right : 8px solid #f4f5f3;
 	background : url(../img/bg.webp) no-repeat center fixed;
 /* 	background : url(../img/be.webp) no-repeat center fixed; */
-	background-size : cover;
+	background-size : cover
 }
 
 .about
@@ -80,7 +109,7 @@ body
 
 	margin : 3rem;
 
-	color : #000
+	color : var(--color-text)
 }
 
 .title
@@ -91,10 +120,8 @@ body
 
 .about-me
 {
-	font-size : 1rem;
+	font-size : 1.4rem;
 	font-weight : 400;
-
-	padding-left : 4px;
 
 	letter-spacing : .04rem
 }
@@ -107,60 +134,60 @@ body
 
 svg.copyright-icon
 {
-	width : 1rem;
-	height : 1rem;
+	width : 1.2rem;
+	height : 1.2rem;
 	margin-right : 6px;
 
-	fill : #000;
+	fill : var(--color-text);
 	stroke : currentColor;
 	stroke-width : 0
 }
 
 svg.copyright-icon:hover
 {
-	width : 1.125rem;
-	height : 1.125rem;
+	width : 1.175rem;
+	height : 1.175rem;
 
 	transition : all .3s;
 
-	fill : #02c6ba
+	fill : var(--color-hover)
 }
 
 .copyright
 {
-	font-size : .875rem;
+	font-size : 1rem;
 	font-weight : 400;
 	line-height : 0;
 
 	letter-spacing : .04rem;
 
-	color : #000
+	color : var(--color-text)
 }
 
 .copyright a
 {
-	font-size : .875rem;
+	font-size : 1rem;
 
 	text-decoration : none;
 
-	color : #74b4d0
+	color : var(--color-link)
 }
 
 .copyright a:hover ,
 .copyright a:focus
 {
-	padding : 6px 10px;
+	padding : 2px 8px;
 
 	cursor : pointer;
 	transition : all .3s;
 	transform : scale(.1, 1);
 
-	color : #fff;
+	color : var(--color-white);
 	border : none;
 	border-radius : 45px;
 	outline : none;
-	background : #02c6ba;
-	box-shadow : 0 8px 8px rgba(0, 0, 0, .1)
+	background : var(--color-hover);
+	box-shadow : 0 8px 8px var(--color-shadow)
 }
 
 /* 	side  */
@@ -175,13 +202,11 @@ svg.copyright-icon:hover
 	height : 100%;
 	max-height : 1080px;
 
-	background : #fff
+	background : var(--color-white)
 }
 
 .txt-card
 {
-	font-size : 1.125rem;
-
 	display : flex;
 	flex-direction : column;
 	flex-grow : 1;
@@ -203,46 +228,45 @@ svg.copyright-icon:hover
 {
 	text-decoration : none;
 
-	color : #74b4d0
+	color : var(--color-link)
 }
 
 .txt-card a:hover ,
 .txt-card a:focus
 {
-	font-size : 1rem;
+	font-size : 1.5rem;
 
-	padding : 6px 14px;
+	padding : 4px 8px;
 
 	cursor : pointer;
 	transition : all .3s;
 	transform : scale(.1, 1);
 
-	color : #fff;
+	color : var(--color-white);
 	border : none;
 	border-radius : 45px;
 	outline : none;
-	background : #02c6ba;
-	box-shadow : 0 2px 8px rgba(0, 0, 0, .1)
+	background : var(--color-hover);
+	box-shadow : 0 2px 8px var(--color-shadow)
 }
 
 .txt-label
 {
-	font-size : 1.4rem;
 	font-variant : small-caps;
-	line-height : 4rem;
+	line-height : 4.625rem;
 
 	display : flex;
 	order : 2;
 
-	height : 4rem;
-	min-height : 4rem;
+	height : 4.625rem;
+	min-height : 4.625rem;
 	padding-left : 3.2rem;
 
 	letter-spacing : .07rem;
 
-	color : #bfc0bf;
-	background : #f4f5f3;
-	text-shadow : 0 1px 1px #fff
+	color : var(--color-label); ;
+	background : var(--color-bg);
+	text-shadow : 0 1px 1px var(--color-white)
 }
 
 .shot
@@ -273,7 +297,6 @@ svg.copyright-icon:hover
 	object-fit : cover
 }
 
-
 /* 	 radio player 	*/
 
 .player
@@ -288,7 +311,7 @@ svg.copyright-icon:hover
 	max-height : 200px;
 	padding : 3rem;
 
-	background : #b9bea5
+	background : var(--color-player-bg)
 }
 
 .audio-icon
@@ -302,23 +325,23 @@ svg.audio
 	display : flex;
 	align-items : center;
 
-	width : 3.75rem;
-	height : 3.75rem;
+	width : 7rem;
+	height : 7rem;
 
 	cursor : pointer;
 	transition : .3s;
 
-	fill : #f4f5f3;
+	fill : var(--color-player);
 	stroke : currentColor;
 	stroke-width : 0
 }
 
 svg.audio:hover
 {
-	width : 4rem;
-	height : 4rem;
+	width : 8rem;
+	height : 8rem;
 
-	fill : #e6ecec
+	fill : var(--color-text)
 }
 
 svg.hide-play
@@ -334,7 +357,7 @@ svg.hide-play
 
 	width : 60%;
 
-	color : #fff
+	color : var(--color-bg)
 }
 
 .audio-info span
@@ -350,15 +373,13 @@ svg.hide-play
 
 .track
 {
-	font-size : 1.4rem;
-	line-height : 1.25rem
+	font-size : 2.2rem;
+	line-height : 1.5rem
 }
-
 
 .track-data
 {
-	font-size : 1rem;
-	line-height : 1.75rem
+	font-size : 1.4rem
 }
 
 /* 	 device  mobile */
@@ -371,7 +392,7 @@ svg.hide-play
 {
 	max-height : 100%;
 
-	margin-top : 16ch;
+	margin-top : 12ch;
 
 	padding : 2rem
 }
@@ -379,6 +400,18 @@ svg.hide-play
 .player
 {
 	padding : 1rem
+}
+
+svg.audio
+{
+	width : 6rem;
+	height : 6rem
+}
+
+svg.audio:hover
+{
+	width : 5rem;
+	height : 5rem
 }
 
 }
@@ -399,8 +432,6 @@ svg.hide-play
 
 	width : 100%;
 	max-height : 660px;
-
-	border-right : none;
 
 	justify-content : center;
 
@@ -453,13 +484,14 @@ svg.hide-play
 
 }
 
-/* 	desktop wild and tv */
-
+/* 	desktop wild and tv */ 
+ 
 @media screen and (min-width: 1921px)
 {
+
 	body
 {
-	background-color : #dbeef2
+	background-color : var(--color-bg-wild)
 }
 
 body::before
@@ -481,15 +513,20 @@ body::before
 .page
 {
 	width : 1920px;
-	height : 1080px
+	height : 1080px	
 }
 
-.content ,	.side
+.content
 {
-	box-shadow : 0 5px 10px 2px rgba(0, 0, 0, .2)
+	box-shadow : -10px 0 8px -8px var(--color-shadow)
 }
 
+.side
+{
+	box-shadow : 10px 0 8px -8px var(--color-shadow)
 }
+
+} 
 
 /* 	loader	*/
 
@@ -510,7 +547,7 @@ body::before
 	height : 100vh;
 	margin : auto;
 
-	background : rgba(244, 245, 243, .9)
+	background : var(--color-bg)
 }
 
 .cube-loader
@@ -536,14 +573,14 @@ body::before
 	content : '';
 	animation : rotation 2s ease-in-out infinite alternate;
 
-	border : 2px solid #02c6ba
+	border : 2px solid var(--color-hover)
 }
 
 .cube-loader::after
 {
 	animation-direction : alternate-reverse;
 
-	border-color : #c7cbb6
+	border-color : var(--color-player-bg)
 }
 
 @keyframes rotation
