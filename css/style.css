@@ -507,9 +507,7 @@ body::before
 	background-image : url(../img/paris.png), url(../img/teal.svg);
 	background-repeat : no-repeat, no-repeat;
 	background-position : bottom left 10%, center;    
-  background-size : 406px 356px, cover
-	/* background-position : bottom left, center;
-	background-size : 20%, cover */
+  background-size : 406px 356px, cover	
 }
 
 .page
