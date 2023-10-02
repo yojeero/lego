@@ -12,7 +12,8 @@ a:active, a:focus, a:hover {outline-width: 0}
 
 /* style  */
 
-:root {
+:root 
+{
   --color-bg: #f5f5f2; 
 
   --color-bg-wild : #dbeef2 ;
@@ -304,8 +305,7 @@ svg.copyright-icon:hover
 	display : flex;
 	align-items : center;
 	justify-content : space-around;
-	order : 4
-;
+	order : 4;
 
 	min-height : 20%;
 	max-height : 200px;
@@ -489,7 +489,7 @@ svg.audio:hover
 @media screen and (min-width: 1921px)
 {
 
-	body
+body
 {
 	background-color : var(--color-bg-wild)
 }
@@ -506,8 +506,10 @@ body::before
 
 	background-image : url(../img/paris.png), url(../img/teal.svg);
 	background-repeat : no-repeat, no-repeat;
-	background-position : bottom left, center;
-	background-size : 20%, cover
+	background-position : bottom left 10%, center;    
+  background-size : 406px 356px, cover
+	/* background-position : bottom left, center;
+	background-size : 20%, cover */
 }
 
 .page
