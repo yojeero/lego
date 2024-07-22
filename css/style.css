@@ -1,0 +1,564 @@
+/* css reset | @yojeero | https://github.com/yojeero */
+
+**, *::before, *::after {box-sizing: border-box} * {margin: 0} 
+html, body{font-size: 62.5%; height: 100%}
+
+img, picture, video, canvas {display: block; max-width: 100%}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word}
+input, button, textarea, select {font: inherit}
+ul[role='list'], ol[role='list'] {list-style: none}
+a {cursor: pointer; text-decoration: none; border: 0; background: transparent}
+a:active, a:focus, a:hover {outline-width: 0}  
+
+/* 	main  */
+
+body
+{
+	font-family : Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size : 1.6rem;
+	font-weight : 300;
+	line-height : 1.6;
+
+	width : 100%;
+
+	margin : 0;
+	padding : 0;
+
+	color : #3f4144;
+}
+
+.page
+{
+	display : flex;
+	flex-wrap : nowrap; 
+	
+	margin: auto;
+	
+	align-items : center;	
+
+	width : 100%;	
+	height : 100%;
+	min-height : 100vh;	
+	max-width : 1920px;
+	max-height : 1080px;
+}
+
+.content
+{		
+	display : flex;
+	flex-wrap : nowrap;	
+
+	width : 66%;
+	height : 100vh;
+	max-height : 1080px;
+
+	background : url(../img/bg.webp) no-repeat center fixed;
+	background-size : cover;
+}
+
+.about
+{
+	display : flex;
+	align-items : end;
+
+	margin : 4rem;
+}
+
+.about img
+{
+	width : 200px;
+	height : 200px;
+
+	border-radius : 50%;
+	background : no-repeat center;
+
+	object-fit : cover;
+}
+
+.me-info
+{
+	font-variant : small-caps;
+
+	display : flex;
+	flex-direction : column;
+
+	margin : 3rem;
+
+	color : #3f4144;;
+}
+
+.title
+{
+	font-size : 2.5rem;
+	line-height : .875rem;
+}
+
+.about-me
+{
+	font-size : 1.4rem;
+	font-weight : 400;
+
+	letter-spacing : .04rem;
+}
+
+.social
+{
+	margin-top : .75rem;
+	padding-left : 4px;
+}
+
+svg.copyright-icon
+{
+	width : 1.2rem;
+	height : 1.2rem;
+	margin-right : 6px;
+
+	fill : #3f4144;
+	stroke : currentColor;
+	stroke-width : 0;
+}
+
+svg.copyright-icon:hover
+{
+	width : 1.175rem;
+	height : 1.175rem;
+
+	transition : all .3s;
+
+	fill : #02c6ba;
+}
+
+.copyright
+{
+	font-size : 1rem;
+	font-weight : 400;
+	line-height : 0;
+
+	letter-spacing : .04rem;
+
+	color : #3f4144; 
+}
+
+.copyright a
+{
+	font-size : 1rem;
+
+	text-decoration : none;
+
+	color : #3887a9;
+}
+
+.copyright a:hover ,
+.copyright a:focus
+{
+	padding : 2px 8px;
+
+	cursor : pointer;
+	transition : all .3s;
+	transform : scale(.1, 1);
+
+	color : #fff;
+	border : none;
+	border-radius : 45px;
+	outline : none;
+	background : #02c6ba;
+	box-shadow : 0 8px 8px rgba(0, 0, 0, .2);
+}
+
+/* 	side  */
+
+.side
+{
+	display : flex;
+	align-items : stretch;
+	flex-direction : column; 
+
+	width : 34%;
+	height : 100%;
+	max-height : 1080px;
+
+	background : #fff;
+}
+
+.txt-card
+{
+	display : flex;
+	flex-direction : column;
+	flex-grow : 1;
+	justify-content : center;
+	order : 1;
+
+	text-overflow: ellipsis;   
+
+	padding : 3rem;
+}
+
+.txt-card span
+{
+	margin-top : .5rem;
+	margin-bottom : .5rem;
+}
+
+.txt-card a
+{
+	text-decoration : none;
+
+	color : #3887a9;
+}
+
+.txt-card a:hover ,
+.txt-card a:focus
+{
+	font-size : 1.5rem;
+
+	padding : 4px 8px;
+
+	cursor : pointer;
+	transition : all .3s;
+	transform : scale(.1, 1);
+
+	color : #fff;
+	border : none;
+	border-radius : 45px;
+	outline : none;
+	background : #02c6ba;
+	box-shadow : 0 2px 8px rgba(0, 0, 0, .2);
+}
+
+.txt-label
+{
+	font-variant : small-caps;
+	line-height : 4.625rem;
+
+	display : flex;
+	order : 2;
+
+	height : 4.625rem;
+	min-height : 4.625rem;
+	padding-left : 3.2rem;
+
+	letter-spacing : .07rem;
+
+	color : #bfc0bf;
+	background : #f5f5f2;
+	text-shadow : 0 1px 1px #fff;
+}
+
+.shot
+{
+	display : flex;
+
+	width : auto;
+	min-height : 20%;
+
+	order : 3;
+}
+
+#slidy-container
+{
+	overflow : hidden;
+
+	width : 100%;
+	height : 100%;
+}
+
+#slidy img
+{
+	width : auto;
+	min-height : 20vh;
+
+	background-position : bottom center;
+
+	object-fit : cover;
+}
+
+/* 	 radio player 	*/
+
+.player
+{
+	display : flex;
+	align-items : center;
+	justify-content : space-around;
+	order : 4;
+
+	min-height : 20%;
+	max-height : 200px;
+	padding : 3rem;
+
+	background : #b9bea5;
+}
+
+.audio-icon
+{
+	display : flex;
+	align-items : center;
+}
+
+svg.audio
+{
+	display : flex;
+	align-items : center;
+
+	width : 7rem;
+	height : 7rem;
+
+	cursor : pointer;
+	transition : .3s;
+
+	fill : #e2e4da;
+	stroke : currentColor;
+	stroke-width : 0
+}
+
+svg.audio:hover
+{
+	width : 8rem;
+	height : 8rem;
+
+	fill : #3f4144; 
+}
+
+svg.hide-play
+{
+	display : none;
+}
+
+.audio-info
+{
+	display : flex;
+	align-items : stretch;
+	flex-direction : column;
+
+	width : 60%;
+
+	color : #f5f5f2; 
+}
+
+.audio-info span
+{
+	font-variant : small-caps;
+
+	margin : 0;
+	padding : 0;
+
+	text-align : right;
+	letter-spacing : .07rem;
+}
+
+.track
+{
+	font-size : 2.2rem;
+	line-height : 1.5rem;
+}
+
+.track-data
+{
+	font-size : 1.4rem;
+}
+
+/* 	 device  mobile */
+
+@media screen and (max-width: 320px)
+
+{
+
+.txt-card
+{
+	max-height : 100%;
+
+	margin-top : 12ch;
+
+	padding : 2rem;
+}
+
+.player
+{
+	padding : 1rem;
+}
+
+svg.audio
+{
+	width : 6rem;
+	height : 6rem;
+}
+
+svg.audio:hover
+{
+	width : 5rem;
+	height : 5rem;
+}
+
+}
+
+@media screen and (max-width: 1024px )
+{
+	.page
+{
+	display : block;
+
+	max-height : none;
+}
+
+.content
+{
+	display : flex;
+	flex-direction : column;
+
+	width : 100%;
+	max-height : 660px;
+
+	justify-content : center;
+
+	order : 1;
+}
+
+.about
+{
+	display : flex;
+	flex-direction : column;
+
+	width : 100%;
+	margin : 0;
+
+	align-items : center;
+	justify-content : center;
+}
+
+.about img
+{
+	width : 140px;
+	height : 140px;
+
+	margin : 3rem;
+}
+
+.me-info
+{
+	display : flex;
+	flex-direction : column;
+
+	margin : 0;
+
+	text-align : center;
+
+	justify-content : center;
+}
+
+.side
+{
+	display : flex;
+	flex-direction : column;
+
+	width : 100%;
+	max-height : none;
+
+	justify-content : center;
+	order : 2;
+}
+
+}
+
+/* 	desktop wild and tv */ 
+ 
+@media screen and (min-width: 1921px)
+{
+
+body
+{
+	background-color : #dbeef2;
+}
+
+body::before
+{
+	position : absolute;
+	z-index : -1;
+
+	width : 100%;
+	height : 100%;
+
+	content : '';
+
+	background-image : url(../img/paris.png), url(../img/wild.svg);
+	background-repeat : no-repeat, no-repeat;
+	background-position : bottom left 10%, center;    
+  background-size : 406px 356px, cover;
+}
+
+.page
+{
+	width : 1920px;
+	height : 1080px;
+}
+
+.content
+{
+	box-shadow : -10px 0 8px -8px rgba(0, 0, 0, .2);
+}
+
+.side
+{
+	box-shadow : 10px 0 8px -8px rgba(0, 0, 0, .2);
+}
+
+} 
+
+/* 	loader	*/
+
+.loader
+{
+	position : absolute;
+	z-index : 9999;
+	top : 0;
+	right : 0;
+	bottom : 0;
+	left : 0;
+
+	display : flex;
+	align-items : center;
+	justify-content : center;
+
+	width : 100%;
+	height : 100vh;
+	margin : auto;
+
+	background : #f5f5f2; 
+}
+
+.cube-loader
+{
+	position : relative;
+
+	display : flex;
+
+	width : 48px;
+	height : 48px
+}
+
+.cube-loader::after ,
+.cube-loader::before
+{
+	position : absolute;
+	top : 0;
+	left : 0;
+
+	width : 48px;
+	height : 48px;
+
+	content : '';
+	animation : rotation 2s ease-in-out infinite alternate;
+
+	border : 2px solid #02c6ba;
+}
+
+.cube-loader::after
+{
+	animation-direction : alternate-reverse;
+
+	border-color : #b9bea5;
+}
+
+@keyframes rotation
+{
+	0% {transform : rotate(0deg)}
+	100% {transform : rotate(360deg)}
+}
