@@ -377,13 +377,12 @@ body
 {
 	display : flex;
 
-	width : 2rem;
-	height : 2rem;
+	width : 3rem;
+	height : 3rem;
 
-	fill : #000;
-	stroke : #000;
+	fill : #74b4d0;
+	stroke : #74b4d0;
 }
-
 
 /* ---- device ------ */
 
