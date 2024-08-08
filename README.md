@@ -10,7 +10,8 @@ Features
 - HTML5, CSS3, SVG icons 
 - Google Fonts, Whatsapp and Map Links
 - Fully responsive layout
-- Flexbox
+- Newest CSS Grid Layout
 - Radio player via Vanilla JS
 
--- All images and icons are for demonstration purposes only --
+--All images and icons are for demonstration purposes only --
+
