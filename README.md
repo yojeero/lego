@@ -12,4 +12,5 @@ Features
 - Fully responsive layout
 - Flexbox
 - Radio player
-- Included 404.html page for site maintenance
+
+-- All images and icons are for demonstration purposes only --
