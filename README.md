@@ -1,4 +1,4 @@
-<img src="preview/view.jpg">
+<img src="preview/view.webp">
 
 ### [Lego](https://legoo.vercel.app/) - landing HTML template ###
 
@@ -11,6 +11,6 @@ Features
 - Google Fonts, Whatsapp and Map Links
 - Fully responsive layout
 - Flexbox
-- Radio player
+- Radio player via Vanilla JS
 
 -- All images and icons are for demonstration purposes only --
