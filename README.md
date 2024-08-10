@@ -1,4 +1,4 @@
-<img src="preview/view.webp">
+<img src="preview/view.jpg">
 
 ### [Mocato](https://legoo.vercel.app/) - landing HTML template ###
 
